@@ -1,42 +1,32 @@
-
-// Copyright (c) 2025 Adrina Peighambarzadeh
+// Copyright (c) 2025 Adrina peighambarzadeh All rights reserved
 //
-// Created by: Adrina Peighambarzadeh
+// Created by: Adrina peighambarzadeh
 // Created on: May 2025
 // This file contains the JS functions for index.html
-
-"use strict"
-
+  "use strict"
 /**
- * This function gets the current weather.
+ * This function gets the weather today
+ * The 'async' is there because it will take time for the internet to return the value
  */
-async function getWeather() {
-  // Replace this with your actual API key from Google Classroom
-  const apiKey = "YOUR_API_KEY_HERE"
-  const city = "Toronto"
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-
+async function weatherToday() {
+  // the 'try' is here because the internet may not be working
+  // it is like an 'if ... else' statement'
   try {
-    const resultJSON = await fetch(url)
+    const resultJSON = await fetch(
+      "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
+    )
     const jsonData = await resultJSON.json()
-    // console.log(jsonData)
-
-    const temperature = jsonData.main.temp
-    const description = jsonData.weather[0].description
+    console.log(jsonData)
+    // bring the information from API
     const iconCode = jsonData.weather[0].icon
-    const iconURL = `https://openweathermap.org/img/wn/${iconCode}@2x.png`
-
+    const tempCelsius = (jsonData.main.temp - 273.15).toFixed(1)
     // output
-    document.getElementById("weather-temp").innerHTML = "<p>Temperature: " + temperature + "°C</p>"
-    document.getElementById("weather-description").innerHTML = "<p>Conditions: " + description + "</p>"
-    document.getElementById("weather-icon").innerHTML = '<img src="' + iconURL + '" alt="Weather icon">'
+    document.getElementById("weather-icon").src =
+      "https://openweathermap.org/img/wn/" + iconCode + "@2x.png"
+    document.getElementById("weather-today").innerHTML = "Temperature is " +
+      tempCelsius +
+      " °C"
   } catch (error) {
     console.error(error)
-    document.getElementById("weather-temp").innerHTML = "<p>Could not get weather data.</p>"
-    document.getElementById("weather-description").innerHTML = ""
-    document.getElementById("weather-icon").innerHTML = ""
   }
 }
-
-
-
