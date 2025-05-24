@@ -1,23 +1,32 @@
 <mxfile host="65bd71144e">
     <diagram id="HIP3nbAZw_EuaXWnEj3U" name="Page-1">
-        <mxGraphModel dx="906" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="762" dy="375" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="7" value="http://ics2o.mths.ca" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="40" width="760" height="480" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Weather here today&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="285" y="73" width="230" height="40" as="geometry"/>
+                <mxCell id="12" value="Temperature is..... °C" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="7" vertex="1">
+                    <mxGeometry x="30" y="238" width="140" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="&lt;span style=&quot;color: rgb(0, 0, 0); text-wrap-mode: nowrap;&quot;&gt;Click to see weather&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="90" y="190" width="160" height="50" as="geometry"/>
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Weather Today:&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="7">
+                    <mxGeometry x="40" y="93" width="150" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Weather:..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="80" y="278" width="80" height="30" as="geometry"/>
+                <mxCell id="15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;" vertex="1" parent="7">
+                    <mxGeometry x="580" y="133" width="148.33" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Tempetature" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="55" y="318" width="90" height="30" as="geometry"/>
+                <mxCell id="9" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Weather Today, with API &amp;amp; JSON&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="73" width="380" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;span style=&quot;color: rgb(0, 0, 0); text-wrap-mode: nowrap;&quot;&gt;Click to see the weather today!&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="190" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="40" y="120" as="sourcePoint"/>
+                        <mxPoint x="800" y="120" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
